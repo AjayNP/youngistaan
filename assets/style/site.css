@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'Optima Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Optima Bold'), url('../fonts/OPTIMA_B.woff') format('woff');
+  }
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4rem;
+}
+header {
+  background-color: #45c3d3;
+  padding: 1.2rem 2rem 0 2rem;
+  position: relative;
+  border-bottom: 1rem solid #0074A9;
+}
+header:after{
+  content: '';
+  height: 65%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: #0074A9;
+}
+header .container{position: relative; z-index: 2;}
+.login-links{
+    margin-top: 6rem;
+    text-align: right;
+}
+::placeholder{color: #fff; opacity: 1;}
+.login-links a{margin-left: 1.5rem; min-width: 8rem; font-size: 1.2rem; border-radius: 1.4rem; background-color: #FDB813; border:1px solid #FDB813}
+.login-links a:first-child{margin-left: 0; background-color: #CCCCCC; border: 1px solid #ccc}
+.page-search{position: relative; border: .3rem solid #333333; background-color: #45c3d3; border-radius: 2rem; width: 30rem; padding-left: .5rem;}
+.page-search input[type="text"]{background-color: #45c3d3; border: .1rem solid #45c3d3; color: #fff; width: 92%; font-style: italic; font-size: 1.2rem;}
+.page-search input[type="text"]::placeholder{color: rgba(255,255,255,0.9); letter-spacing: .05rem;}
+.page-search button{position: absolute; border: 0; top: -.2rem; right: 0; color: #000; font-size: 1.6rem;}
+.social-links{list-style: none; display: flex; justify-content: flex-end; margin-top: 1rem;}
+.social-links li{margin: .4rem;}
+.social-links li a{display: block; width: 2.5rem; height: 2.5rem; line-height: 2.5rem; text-align: center; background-color: #000; color: #fff; border-radius: 10rem;}
+.navbar-nav .nav-item:nth-child(odd) a{line-height: 2rem; background-color: red; padding-left: 2rem; padding-right: 2rem;}
+.navbar-nav .nav-item:nth-child(even) a{line-height: 2.7rem; background-color: #000;padding-left: 2.5rem; padding-right: 2.5rem;}
+.nav-container{background-color: #45C3D3; position: relative;}
+.nav-container:before{background-color: #fff; content: ''; position: absolute; width: 100%; height: 1rem; left: 0; top: 0;}
+.nav-container nav{margin-top: 0;}
+.navbar-nav .nav-item:nth-child(odd){margin-right: -1rem; margin-left: -1rem; position: relative;}
+.navbar-nav .nav-item a{font-size: 1.3rem; font-weight: 700;}
+.navbar-nav .nav-item:first-child  a{color: #fff; margin-left: 0; background-color: #DA2128;}
+.navbar-nav .nav-item:nth-child(2) a{color: #fff;  background-color: #000;}
+.navbar-nav .nav-item:nth-child(3) a{color: #fff;  background-color: #F06B5C;}
+.navbar-nav .nav-item:nth-child(4) a, .navbar-nav .nav-item:nth-child(7) a{color: #000;  background-color: #fff;}
+.navbar-nav .nav-item:nth-child(5) a{color: #fff;  background-color: #B771A3;}
+.navbar-nav .nav-item:nth-child(6) a{color: #fff;  background-color: #F26122;}
+
+.age-category{position: absolute; right: 0; top: -1.8rem; z-index: 12;}
+.age-category label, .age-category span{display: block; font-weight: 700}
+.age-category label{font-size: 1.3rem; line-height: 1.2;}
+.age-category span{font-size: 1.1rem;}
+.age-category li{margin: 0 0 0 1rem;}
+.age-category a{height: 5.5rem; width: 5.5rem; border-radius: 50%; background-color: #fff; color: #000; display: flex; flex-direction: column; justify-content: center; align-items: center; border: .1rem solid #0C92B4; }
+.age-category a:hover{text-decoration: none;}
+.banner{position: relative; padding-top: 2.5rem;}
+.banner:after{content: ''; background-color: #45c3d3; height: 70%; width: 100%; position: absolute; left: 0; top: 0;}
+.carousel{z-index: 12; border: 1rem solid #fff; padding: 1.5rem;}
+.carousel-indicators{background-color: #fff; margin: 0; bottom: 0; justify-content: flex-end; padding-right: 1.2rem;}
+.carousel-indicators li{width: 1rem; height: 1rem; border-radius: 50%; background-color: rgba(0,0,0,0.5);}
+.carousel-indicators .active{background-color: rgba(0,0,0,0.9);}
+.category-block{height: 30rem; position: relative; margin: 1.5rem 0;}
+.category-block h2{font-size: 3.6rem; font-weight: 900; text-align: left;}
+.category-block p{width: 45%; text-align: left; font-family: 'Optima Bold'; font-size: 1.8rem; }
+.category-block img{position: absolute; bottom: -1rem; right: -1rem; height: 21.5rem;}
+.air-block{}
+
+/* Flip CSS */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  perspective: 1000px;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card:hover .flip-card-front img{display: none;} 
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  padding: 2rem; border-radius: 2rem;
+  color: black;
+  
+}
+
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+  overflow: hidden;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 4rem;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Optima Bold';
+}
+.air-block{
+  background-color: #92C83E;
+}
+.water-block{
+  background-color: #95D9F7;
+}
+.climate-block{
+  background-color: #7E8CC6;
+}
+.waste-block{
+  background-color: #FCC961;
+}
+.food-block{
+  background-color: #FAB899;
+}
+.habitat-block{
+  background-color: #45C3D3 !important;
+}
+.bio-block{
+  background-color: #B771A3;
+  color: #fff;
+}
+.energy-block{
+  background-color: #F06B5C;
+}
+.flip-card-front.water-block, .flip-card-front.water-block p{text-align: right;}
+
+.category-block .water-block img{left: -2.5rem; top: 2.2rem; height: 88%;}
+.category-block .water-block h2{text-align: right;}
+.category-block .water-block p{float: right;}
+
+.category-block .climate-block img{left: 0; bottom: -1.5rem; height: 80%;}
+.category-block .climate-block h2{text-align: left;}
+.category-block .climate-block p{float: right; text-align: left; width: 53.5%;}
+
+.category-block .waste-block img{left: -1rem; bottom: -1rem; height: 75%;}
+.category-block .waste-block h2{text-align: right;}
+.category-block .waste-block p{float: right; text-align: right;}
+
+.category-block .food-block img{left: 50%; transform: translateX(-50%); bottom: -2rem; height: 60%;}
+.category-block .food-block p{width: 100%;}
+
+.category-block .habitat-block img{top: 15%; height: 60%; width: 50%;}
+
+.category-block .bio-block img{bottom: -1rem; right: -1rem;  height: 25rem;}
+
+.category-block .energy-block img{left: -1rem; top: 4rem; height: 75%;}
