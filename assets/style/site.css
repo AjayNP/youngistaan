@@ -180,6 +180,7 @@ header .container{position: relative; z-index: 2;}
 .nav-container .navbar{position: absolute; width: 92%; z-index: 1234;}
 .navbar-nav .nav-item:nth-child(odd){margin: 0;}
 .navbar-nav .nav-item:nth-child(even) a{padding-left: 2rem; padding-right: 2rem; line-height: 2rem;}
+.navbar-nav .nav-item:last-child .nav-link{background-color: #7E8CC6; color: #fff}
 .age-category{display: none;}
  .page-search{position: absolute; top: -11rem; right: 1.5rem;}
  .login-links{margin-top: 0;}
@@ -190,6 +191,10 @@ header .container{position: relative; z-index: 2;}
   .page-search{top: -8rem; width: 20rem;}
   .social-links{position: fixed; right: 0; top: 50%; display: block;}
   .navbar-toggler{bottom: -2.2rem;}
+  .category-block{padding-left: 2rem; padding-right: 2rem;}
+  .category-block h2{font-size: 2.6rem;}
+  .category-block p{font-size: 1.4rem;}
+  .category-block img{height: 16rem !important;}
 }
 @media screen and (max-width: 580px) {
   .banner{
