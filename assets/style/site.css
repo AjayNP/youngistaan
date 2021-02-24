@@ -173,3 +173,31 @@ header .container{position: relative; z-index: 2;}
 .category-block .bio-block img{bottom: -1rem; right: -1rem;  height: 25rem;}
 
 .category-block .energy-block img{left: -1rem; top: 4rem; height: 75%;}
+.navbar-toggler{display: none;}
+@media screen and (max-width: 992px) {
+.navbar-toggler{display: block;}
+.nav-container .container{position: relative;}
+.nav-container .navbar{position: absolute; width: 92%; z-index: 1234;}
+.navbar-nav .nav-item:nth-child(odd){margin: 0;}
+.navbar-nav .nav-item:nth-child(even) a{padding-left: 2rem; padding-right: 2rem; line-height: 2rem;}
+.age-category{display: none;}
+ .page-search{position: absolute; top: -11rem; right: 1.5rem;}
+ .login-links{margin-top: 0;}
+ .navbar-toggler{background-color: #FDB813; position: absolute; left: 0; bottom: -3.2rem; z-index: 123;}
+ .navbar-toggler i{color: #0074A9;}
+}
+@media screen and (max-width: 769px) {
+  .page-search{top: -8rem; width: 20rem;}
+  .social-links{position: fixed; right: 0; top: 50%; display: block;}
+  .navbar-toggler{bottom: -2.2rem;}
+}
+@media screen and (max-width: 580px) {
+  .banner{
+    padding: .5rem 2.5rem 0;
+  }
+  .page-search input[type="text"]{top: -7rem;}
+  .carousel{padding: .5rem;}
+  .carousel-indicators{
+    bottom: -1.1rem;
+  }
+}
