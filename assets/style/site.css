@@ -188,7 +188,7 @@ header .container{position: relative; z-index: 2;}
  .navbar-toggler i{color: #0074A9;}
 }
 @media screen and (max-width: 769px) {
-  .page-search{top: -8rem; width: 20rem;}
+  .page-search{top: -7rem; width: 15rem;}
   .social-links{position: fixed; right: 0; top: 50%; display: block;}
   .navbar-toggler{bottom: -2.2rem;}
   .category-block{padding-left: 2rem; padding-right: 2rem;}
